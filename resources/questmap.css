@@ -1,0 +1,63 @@
+:root {
+    --bg: #191919;
+    --b: #2D2D2D;
+    --boxbg: rgba(207, 207, 207, 0.8);
+    --wh: #FBFBFB;
+    --red: #D24444;
+    --strich: #707070;
+    --shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    --gradiant: linear-gradient(148deg, #2D2D2D 10%, #C22222 90%);
+    --boxgradient: linear-gradient(to right, #7950F2, #f53b3b);
+    --p-b: #111111;
+    --p-hb: rgba(39, 39, 39, 0.192);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #1e2428;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.questmapbackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+}

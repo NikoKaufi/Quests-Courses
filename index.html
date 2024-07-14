@@ -2,43 +2,91 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quest & Courses</title>
-    <link rel="stylesheet" href="resources/style.css">
+    <link rel="stylesheet" href="resources/index.css">
     <link rel="stylesheet" href="resources/mobile.css">
     <link rel="icon" href="resources/assets/favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/png" sizes="64x64" href="resources/assets/favicon.png">
 </head>
 <body>
-    
-        <header>
-            <h1>Welcome to Quest & Courses</h1>
-            <nav>
-                <ul>
-                    <li><a href="login.html">Logout</a></li>
-                    <li><a href="questmap.html">Questmap</a></li>
-                    <li class="rightcontent"><a href="profile.html">Profile</a></li>
-                    
-                </ul>
-            </nav>
-        </header>
-    
-        <main>
-            <div class="indexbackground" style="background-image: url('resources/assets/indexbackground.png');">
-                <p>Dies ist die Startseite.</p>
+    <div class="indexbackground" style="background-image: url('resources/assets/indexbackground.png');"></div>
+    <header>
+        <h1>Welcome $User to Quest & Courses</h1>
+        <nav>
+            <ul>
+                <li><a href="questmap.html">Questmap</a></li>
+                <li><a href="https://poly.webuntis.com/WebUntis/?school=BS_Erlangen#/basic/login">Stundenplan</a></li>
+                <li class="avatar">
+                    <img src="resources/assets/avatar.png" alt="Avatar" style="width:40px;">
+                    <div class="dropdown-content">
+                        <a href="settings.html">Settings</a>
+                        <a href="profile.html">Profile</a>
+                        <a href="login.html">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h2>Hauptcontent</h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
+                    <br>tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                    <br> At vero eos et accusam et justo duo dolores et ea rebum. 
+                    <br>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    <br>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+                    <br> invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                    <br> At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+                    <br> sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
+                    <br> consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna 
+                    <br> aliquyam erat, sed diam voluptua. 
+                    <br> At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+                    <br> no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </p>
             </div>
-        </main>
-    
-    <div class="loginspacer"></div>
-    
+            <div>
+                
+                <!-- Modulare Tasks die sich automatisch resizen-->
+                <div class="grid-item news-feed">
+                    <h2>New tasks</h2>
+                    <p>Task1</p>
+                    <p>Task2</p>
+                    <p>Task3</p>
+                </div>
 
+                <!-- Modulare Artikel die sich automatisch resizen-->
+                <div class="grid-item article-list">
+                    <h2>Artikel</h2>
+                    <div class="article" onclick="window.location.href='artikel1.html'">
+                        <img src="resources/assets/artikel1.png" alt="Artikel 1">
+                        <div class="article-content">
+                            <h3>Artikel 1 Titel</h3>
+                            <p>Beschreibung für Artikel 1.</p>
+                        </div>
+                    </div>
+                    <div class="article" onclick="window.location.href='artikel2.html'">
+                        <img src="resources/assets/artikel2.png" alt="Artikel 2">
+                        <div class="article-content">
+                            <h3>Artikel 2 Titel</h3>
+                            <p>Kurze Beschreibung des Artikels 2.</p>
+                        </div>
+                    </div>
+                    <div class="article" onclick="window.location.href='artikel3.html'">
+                        <img src="resources/assets/artikel3.png" alt="Artikel 3">
+                        <div class="article-content">
+                            <h3>Artikel 3 Titel</h3>
+                            <p>Kurze Beschreibung des Artikels 3.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p><a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a> | <a href="kontakt.html">Kontakt</a></p>
+    </footer>
+    <script src="resources/script.js"></script>
 </body>
 </html>
-<script src="resources/navbar.js"></script>
-<script src="resources/script.js"></script>

@@ -111,11 +111,11 @@ button:active {
 .indexbackground {
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     overflow: hidden;
     display: flex;
-    padding-top: 0vh; 
+    padding-top: 0vh;
     height: 100vh; 
+    overflow-y: hidden;
 }
 .rightcontent {
     margin-left: auto;
@@ -130,3 +130,72 @@ button:active {
     height: 250vh;
     margin: 0;
 }
+
+.titleunderline {
+    border-bottom: 2px solid var(--red);
+  }
+  
+  .underline-small {
+    width: 250px;
+  }
+  
+  .underline-large {
+    width: 400px;
+  }
+  
+  .grid-container {
+    display: flex;
+    justify-content: space-between; /* Verteilt die Container gleichmäßig mit Platz dazwischen */
+    align-items: flex-start;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10px; 
+  }
+  
+  .small {
+    flex-basis: 45%; /* Basisgröße der Container */
+    flex-grow: 1; /* Erlaubt den Containern, sich bei zusätzlichem Inhalt zu dehnen */
+    max-width: 30%;
+    min-width: 100px; /* Mindestbreite der Container */
+  }
+  
+  .grid-item {
+    position: relative;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.7);;
+    border-radius: 5px;
+    overflow: hidden; 
+  }
+  
+  .content {
+    padding: 10px;
+  }
+  
+  .grid-item-h1 {
+    font-size: 2rem;
+    color: white;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    margin: 0;
+  }
+
+  .title-container {
+    display: flex;
+    justify-content: space-between
+  }
+  
+  h3 {
+    font-size: 3rem;
+    color: var(--b);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    margin-left: 20px; 
+  }
