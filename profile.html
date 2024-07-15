@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="resources/profile.css">
+    <link rel="icon" href="resources/assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="64x64" href="resources/assets/favicon.png">
+</head>
+<body>
+    <header>
+        <h1>User Profil von $User</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="avatar">
+                    <img src="resources/assets/avatar.png" alt="Avatar" style="width:40px;">
+                    <div class="dropdown-content">
+                        <a href="settings.html">Settings</a>
+                        <a href="profile.html">Profile</a>
+                        <a href="login.html">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="user-info">
+            <h2>User Information</h2>
+            <div class="user-details">
+                <div class="user-roles">
+                    <h3>Rollen</h3>
+                    <ul>
+                        <li>Administrator</li>
+                        <li>Editor</li>
+                    </ul>
+                </div>
+                <div class="user-activities">
+                    <h3>Letzte Aktivitäten</h3>
+                    <ul>
+                        <li>Artikel veröffentlicht am 12. Juli 2024</li>
+                        <li>Kommentar hinterlassen am 10. Juli 2024</li>
+                    </ul>
+                </div>
+                <div class="user-karma">
+                    <h3>Karma Punkte</h3>
+                    <div class="karma-graph">
+                        <!-- Dynamische Grafik für Karma Punkte -->
+                        <div class="karma-bar" style="width: 70%;">70%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a> | <a href="kontakt.html">Kontakt</a></p>
+    </footer>
+</body>
+</html>

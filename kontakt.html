@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quest & Courses</title>
+        <link rel="stylesheet" href="resources/kontakt.css">
+        <link rel="stylesheet" href="resources/mobile.css">
+        <link rel="icon" href="resources/assets/favicon.ico" type="image/x-icon">
+        <link rel="icon" type="image/png" sizes="64x64" href="resources/assets/favicon.png">
+    </head>
+<body>
+    <header>
+        <h1>Quests & Courses Kontakt</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <!-- Weitere Navigationseinträge -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Kontakt</h2>
+            <p>Wir freuen uns über Ihre Nachricht! Bitte füllen Sie das untenstehende Formular aus, und wir werden uns so schnell wie möglich bei Ihnen melden.</p>
+            <form action="send_contact.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="subject">Betreff:</label>
+                <input type="text" id="subject" name="subject" required>
+                
+                <label for="message">Nachricht:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <input type="submit" value="Absenden">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <!-- Das Datum wird mittels JS dynamisch geladen -->
+        <p>&copy; Quests & Courses 2024 - <span id="currentYear"></span></p>
+    </footer>
+    <script src="resources/script.js"></script>
+</body>
+</html>

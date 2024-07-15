@@ -1,32 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quest & Courses</title>
-    <link rel="stylesheet" href="resources/style.css">
-    <link rel="stylesheet" href="resources/mobile.css">
-    <link rel="icon" href="resources/assets/favicon.ico" type="image/x-icon">
-    <link rel="icon" type="image/png" sizes="64x64" href="resources/assets/favicon.png">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quest & Courses</title>
+        <link rel="stylesheet" href="resources/questmap.css">
+        <link rel="stylesheet" href="resources/mobile.css">
+        <link rel="icon" href="resources/assets/favicon.ico" type="image/x-icon">
+        <link rel="icon" type="image/png" sizes="64x64" href="resources/assets/favicon.png">
+    </head>
 <body>
-  
+    <div class="questmapbackground" style="background-image: url('resources/assets/questmapbackground.jpg');"></div>
     <header>
-        <h1>Welcome to Quest & Courses</h1>
+        <h1>Welcome $User to the Questmap</h1>
         <nav>
             <ul>
-                <li><a href="login.html">Logout</a></li>
-                <li><a href="index.html">Back to main</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="avatar">
+                    <img src="resources/assets/avatar.png" alt="Avatar" style="width:40px;">
+                    <div class="dropdown-content">
+                        <a href="settings.html">Settings</a>
+                        <a href="profile.html">Profile</a>
+                        <a href="login.html">Logout</a>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="indexbackground" style="background-image: url('resources/assets/questmapbackground.jpg');"></div>
-        
-
-    </main>    
-    <script src="resources/navbar.js"></script>
+        <!-- Modularer Aufbau mit resizenden Boxen und Pins als Module -->
+        <div class="container">
+            <!-- Mit style top und left wird die Position der Pins bestimmt -->
+            <div class="icon" id="icon1" style="top: 50%; left: 15%;">
+                <img src="resources/assets/pin.png" alt="Icon 1">
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet, 
+                        <br>consetetur sadipscing elitr, sed diam nonumy eirmod 
+                        <br>tempor invidunt ut labore et dolore magna aliquyam erat, 
+                        <br>sed diam voluptua. At vero eos et accusam et justo duo dolores 
+                        <br>et ea rebum. Stet clita
+                    </p>
+                </div>
+            </div>
+            <div class="icon" id="icon2" style="top: 30%; left: 50%;">
+                <img src="resources/assets/pin.png" alt="Icon 2">
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet, 
+                        <br>consetetur sadipscing elitr, sed diam nonumy eirmod 
+                        <br>tempor invidunt ut labore et dolore magna aliquyam erat, 
+                        <br>sed diam voluptua. At vero eos et accusam et justo duo dolores 
+                        <br>et ea rebum. Stet clita
+                    </p>
+                </div>
+            </div>
+            <div class="icon" id="icon3" style="top: 25%; left: 70%;">
+                <img src="resources/assets/pin.png" alt="Icon 3">
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet, 
+                        <br>consetetur sadipscing elitr, sed diam nonumy eirmod 
+                        <br>tempor invidunt ut labore et dolore magna aliquyam erat, 
+                        <br>sed diam voluptua. At vero eos et accusam et justo duo dolores 
+                        <br>et ea rebum. Stet clita
+                    </p>
+                </div>
+            </div>
+            <div class="icon" id="icon4" style="top: 15%; left: 80%;">
+            <img src="resources/assets/pin.png" alt="Icon 4">
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet, 
+                        <br>consetetur sadipscing elitr, sed diam nonumy eirmod 
+                        <br>tempor invidunt ut labore et dolore magna aliquyam erat, 
+                        <br>sed diam voluptua. At vero eos et accusam et justo duo dolores 
+                        <br>et ea rebum. Stet clita
+                    </p>
+                </div>
+            </div>
+            <div class="icon" id="icon5" style="top: 60%; left: 80%;">
+                <img src="resources/assets/pin.png" alt="Icon 5">
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet, 
+                        <br>consetetur sadipscing elitr, sed diam nonumy eirmod 
+                        <br>tempor invidunt ut labore et dolore magna aliquyam erat, 
+                        <br>sed diam voluptua. 
+                    </p>
+                </div>
+            </div>
+            <!-- Weiter Pins hier -->
+        </div>
+    </main>
+    <footer>
+        <p><a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a> | <a href="kontakt.html">Kontakt</a></p>
+    </footer>
     <script src="resources/script.js"></script>
 </body>
 </html>
-<script src="resources/script.js"></script>

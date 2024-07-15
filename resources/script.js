@@ -1,3 +1,4 @@
+// Funktion, welche sich um die Weiterleitung und den Abglich der Login Website kümmert
 function handleLogin(event) {
     event.preventDefault(); // Verhindert das Standard-Formular-Absenden
 
@@ -14,3 +15,29 @@ function handleLogin(event) {
         alert("Benutzername oder Passwort ist falsch.");
     }
 }
+
+// Funktion zum Aktualisieren des aktuellen Jahres
+document.addEventListener('DOMContentLoaded', function() {
+    var currentYearElement = document.getElementById('currentYear');
+    var currentYear = new Date().getFullYear();
+    currentYearElement.textContent = currentYear;
+});
+
+
+// Funktion zum Hochladen von Profilbildern
+function previewProfilePicture(event) {
+    var preview = document.getElementById('profilePicturePreview');
+    var file = event.target.files[0];
+    var reader = new FileReader();
+
+    reader.onloadend = function() {
+        preview.src = reader.result;
+    }
+
+    if (file) {
+        reader.readAsDataURL(file);
+    } else {
+        preview.src = "resources/assets/avatar.png";
+    }
+}
+
