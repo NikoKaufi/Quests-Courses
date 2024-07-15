@@ -20,6 +20,8 @@
 git clone https://github.com/Skeptic-systems/Quests-Courses
 ```
 
+<p>2. Or visit https://skeptic-systems.github.io/Quests-Courses </p>
+
 <p>2. Run login.html in browser</p>
 
 <h2>🛡️ License:</h2>
