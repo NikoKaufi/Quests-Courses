@@ -14,15 +14,15 @@
 
 <h2>🛠️ Installation Steps:</h2>
 
-<p>1. Clone Repository</p>
+<p>1a. Clone Repository</p>
 
 ```
 git clone https://github.com/Skeptic-systems/Quests-Courses
 ```
 
-<p>2. Or visit https://skeptic-systems.github.io/Quests-Courses </p>
-
 <p>2. Run login.html in browser</p>
+
+<p>1b. Or visit https://skeptic-systems.github.io/Quests-Courses </p>
 
 <h2>🛡️ License:</h2>
 
