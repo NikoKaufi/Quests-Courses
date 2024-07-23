@@ -52,7 +52,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-.indexbackground{
+.questmapbackground {
     position: fixed;
     top: 0;
     left: 0;
@@ -104,71 +104,41 @@ main {
     padding: 20px;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    flex: 1;
-    height: calc(100vh - 150px); 
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-.grid-item {
-    background-color: var(--boxbg);
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: var(--shadow);
-}
-
-.news-feed {
-    background-color: var(--boxbg);
-    padding: 10px;
-    border-radius: 5px;
-    height: 150px;
-    overflow-y: auto;
-}
-
-.image-box {
-    background-color: var(--boxbg);
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.image-box img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.article-list {
-    background-color: var(--boxbg);
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 20px;
-    height: calc(100% - 180px);
-    overflow-y: auto;
-}
-
-.article {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: rgba(207, 207, 207, 1);
-    border-radius: 5px;
-    box-shadow: var(--shadow);
+.icon {
+    position: absolute;
     cursor: pointer;
+    display: flex;
+    align-items: center; 
 }
 
-.article img {
-    max-width: 80px;
-    max-height: 80px;
-    margin-right: 10px;
-    border-radius: 5px;
+.icon img {
+    width: 100px;
+    height: 100px;
+    display: block;
 }
 
-.article-content {
-    flex: 1;
+.text {
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    margin-left: 5px; 
+    width: 200px;
+}
+
+.icon:hover .text {
+    display: block;
+    position: absolute;
+    left: 110px; 
+    top: 0;
 }
 
 footer {
@@ -176,7 +146,6 @@ footer {
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
-    margin-top: 6%;
 }
 
 footer a {

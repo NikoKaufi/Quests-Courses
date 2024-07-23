@@ -1,0 +1,102 @@
+:root {
+    --bg: #191919;
+    --b: #2D2D2D;
+    --boxbg: rgba(207, 207, 207, 0.8);
+    --wh: #FBFBFB;
+    --red: #D24444;
+    --strich: #707070;
+    --shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    --gradiant: linear-gradient(148deg, #2D2D2D 10%, #C22222 90%);
+    --boxgradient: linear-gradient(to right, #7950F2, #f53b3b);
+    --p-b: #111111;
+    --p-hb: rgba(39, 39, 39, 0.192);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #1e2428;
+    color: #fff;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    padding-bottom: 60px; 
+}
+
+main section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main h2, main h3, main h4 {
+    color: #1e2428;
+}
+
+footer {
+    background: #1e2428;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 0; 
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.8rem; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    margin-top: 20px;
+    background: #1e2428;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+    background: #555;
+}

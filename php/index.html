@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest & Courses</title>
+    <link rel="stylesheet" href="resources/index.css">
+    <link rel="stylesheet" href="resources/mobile.css">
+    <link rel="icon" href="resources/assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="64x64" href="resources/assets/favicon.png">
+</head>
+<body>
+    <div class="indexbackground" style="background-image: url('resources/assets/indexbackground.png');"></div>
+    <header>
+        <h1>Welcome $User to Quest & Courses</h1>
+        <nav>
+            <ul>
+                <li><a href="questmap.html">Questmap</a></li>
+                <li><a href="https://poly.webuntis.com/WebUntis/?school=BS_Erlangen#/basic/login">Stundenplan</a></li>
+                <li class="avatar">
+                    <img src="resources/assets/avatar.png" alt="Avatar" style="width:40px;">
+                    <div class="dropdown-content">
+                        <a href="settings.html">Settings</a>
+                        <a href="profile.html">Profile</a>
+                        <a href="login.html">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h2>Hauptcontent</h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
+                    <br>tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                    <br> At vero eos et accusam et justo duo dolores et ea rebum. 
+                    <br>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    <br>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+                    <br> invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                    <br> At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+                    <br> sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
+                    <br> consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna 
+                    <br> aliquyam erat, sed diam voluptua. 
+                    <br> At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+                    <br> no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </p>
+            </div>
+            <div>
+                
+                <!-- Modulare Tasks die sich automatisch resizen-->
+                <div class="grid-item news-feed">
+                    <h2>New tasks</h2>
+                    <p>Task1</p>
+                    <p>Task2</p>
+                    <p>Task3</p>
+                </div>
+
+                <!-- Modulare Artikel die sich automatisch resizen-->
+                <div class="grid-item article-list">
+                    <h2>Artikel</h2>
+                    <div class="article" onclick="window.location.href='artikel1.html'">
+                        <img src="resources/assets/artikel1-preview.png" alt="Artikel 1">
+                        <div class="article-content">
+                            <h3>VScode statt Codeblocks</h3>
+                            <p>VScode statt Codeblocks, das war das, 
+                                <br>was die Schüler schon lange gefordert haben
+                            </p>
+                        </div>
+                    </div>
+                    <div class="article" onclick="window.location.href='artikel2.html'">
+                        <img src="resources/assets/artikel2-preview.png" alt="Artikel 2">
+                        <div class="article-content">
+                            <h3>Neue CNC Maschine</h3>
+                            <p>Die Mechaniker haben eine neue CNC Maschine bekommen</p>
+                        </div>
+                    </div>
+                    <div class="article" onclick="window.location.href='https://skeptic-systems.de/'">
+                        <img src="resources/assets/artikel3-preview.png" alt="Artikel 3">
+                        <div class="article-content">
+                            <h3>Skeptic Systems</h3>
+                            <p>der Entwickler der Website</p>
+                        </div>
+                    </div>
+                    <div class="article" onclick="window.location.href='https://github.com/Skeptic-systems'">
+                        <img src="resources/assets/artikel4-preview.png" alt="Artikel 3">
+                        <div class="article-content">
+                            <h3>Skeptic Systems</h3>
+                            <p>Sourcecode der Website</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p><a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a> | <a href="kontakt.html">Kontakt</a></p>
+    </footer>
+    <script src="resources/script.js"></script>
+</body>
+</html>

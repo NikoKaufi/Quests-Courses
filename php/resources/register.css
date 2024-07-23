@@ -1,0 +1,137 @@
+:root {
+    --bg: #191919;
+    --b:#2D2D2D;
+    --boxbg: #CFCFCF;
+    --wh: #FBFBFB;
+    --red: #D24444;
+    --strich: #707070;
+    --shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    --gradiant: linear-gradient(148deg, #2D2D2D 10%, #C22222 90%);
+    --boxgradient: linear-gradient(to right, #7950F2, #f53b3b);
+    --p-b: #111111;
+    --p-hb: rgba(39, 39, 39, 0.192);
+    --link-color: #35424a; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #1e2428;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.loginbackground {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main {
+    padding: 20px;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #35424a;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #455a64;
+    scale: 1.05;
+}
+
+button:active {
+    background: #35424a;
+    transform: translateY(2px);
+}
+
+.loginspacer {
+    height: 150px;
+    display: inline-block;
+}
+
+.message {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.message.success {
+    color: green;
+}
+
+.message.error {
+    color: var(--red);
+}
+
+.register-link {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    color: var(--link-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
