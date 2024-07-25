@@ -23,7 +23,7 @@
                     <input type="password" id="password" name="password" required>
                 </div>
                 <button type="submit" name="submit">Einloggen</button> 
-                <a href="register.html" class="register-link">Neu hier?</a>
+                <a href="register.php" class="register-link">Neu hier?</a>
             </form>
             <div class="message">
                 <?php
@@ -34,11 +34,11 @@
 
                     try {
                         // Verbindungsaufbau mit der Datenbank
-                        $dsn = 'mysql:host=localhost;dbname=questsandcourses;charset=utf8mb4';
+                        $dsn = 'mysql:host=localhost;dbname=schuldb;charset=utf8mb4';
                         $dbh = new PDO($dsn, 'root', '');
 
                         // Überprüfen der Benutzerdaten
-                        $query = 'SELECT `Passwort` FROM `benutzer` WHERE `Username` = ?';
+                        $query = 'SELECT `Passwort` FROM `users` WHERE `Username` = ?';
                         $stmt = $dbh->prepare($query);
                         $stmt->execute([$inputusername]);
                         $storedPassword = $stmt->fetchColumn();

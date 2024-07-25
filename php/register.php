@@ -55,11 +55,11 @@
 
                     try {
                         // Verbindungsaufbau mit der Datenbank
-                        $dsn = 'mysql:host=localhost;dbname=questsandcourses;charset=utf8mb4';
+                        $dsn = 'mysql:host=localhost;dbname=schuldb;charset=utf8mb4';
                         $dbh = new PDO($dsn, 'root', '');
 
                         // Überprüfen, ob der Benutzername bereits existiert
-                        $query = 'SELECT COUNT(*) FROM `benutzer` WHERE `Username` = ?';
+                        $query = 'SELECT COUNT(*) FROM `users` WHERE `Username` = ?';
                         $stmt = $dbh->prepare($query);
                         $stmt->execute([$username]);
                         $exists = $stmt->fetchColumn();
@@ -68,7 +68,7 @@
                             echo "<span class='message error'>Benutzername ist bereits vergeben</span>";
                         } else {
                             // Benutzer registrieren
-                            $query = 'INSERT INTO `benutzer` (`Username`, `Passwort`, `Vorname`, `Nachname`, `E_Mail_Adresse`, `Geburtsdatum`) VALUES (?, ?, ?, ?, ?, ?)';
+                            $query = 'INSERT INTO `users` (`Username`, `Passwort`, `Vorname`, `Nachname`, `EMail_Adresse`, `Geburtsdatum`) VALUES (?, ?, ?, ?, ?, ?)';
                             $stmt = $dbh->prepare($query);
                             $stmt->execute([$username, $password, $firstname, $lastname, $email, $birthdate]);
 

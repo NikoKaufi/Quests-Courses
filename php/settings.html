@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profileinstellungen</title>
+    <link rel="stylesheet" href="resources/settings.css">
+    <link rel="icon" href="resources/assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="64x64" href="resources/assets/favicon.png">
+</head>
+<body>
+    <header>
+        <h1>Welcome $User to Settings</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="avatar">
+                    <img src="resources/assets/avatar.png" alt="Avatar" style="width:40px;">
+                    <div class="dropdown-content">
+                        <a href="settings.html">Settings</a>
+                        <a href="profile.html">Profile</a>
+                        <a href="login.html">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="settings-container">
+            <section class="profile-picture-section">
+                <h2>Profilbild ändern</h2>
+                <form id="profilePictureForm" enctype="multipart/form-data">
+                    <input type="file" id="profilePictureInput" accept="image/*" onchange="previewProfilePicture(event)">
+                    <label for="profilePictureInput">Profilbild auswählen</label>
+                    <div class="profile-picture-preview">
+                        <img id="profilePicturePreview" src="resources/assets/avatar.png" alt="Profilbild Vorschau">
+                    </div>
+                    <button type="submit">Profilbild hochladen</button>
+                </form>
+            </section>
+            <section class="password-section">
+                <h2>Passwort ändern</h2>
+                <form id="passwordForm">
+                    <label for="currentPassword">Aktuelles Passwort</label>
+                    <input type="password" id="currentPassword" name="currentPassword" required>
+                    <label for="newPassword">Neues Passwort</label>
+                    <input type="password" id="newPassword" name="newPassword" required>
+                    <label for="confirmPassword">Passwort bestätigen</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    <button type="submit">Passwort ändern</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p><a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a> | <a href="kontakt.html">Kontakt</a></p>
+    </footer>
+    <script src="resources/script.js"></script>
+</body>
+</html>
